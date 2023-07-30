@@ -1,0 +1,27 @@
+# Node.js related files and folders
+node_modules/
+npm-debug.log
+yarn-error.log
+yarn.lock
+
+# macOS related files
+.DS_Store
+
+# Editor related files
+.vscode/
+.idea/
+
+# Environment variables
+.env
+
+# Log files
+*.log
+
+# Build and output directories
+dist/
+build/
+out/
+
+# Dependency lock files
+package-lock.json
+yarn.lock
