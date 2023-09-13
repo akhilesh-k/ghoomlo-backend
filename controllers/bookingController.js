@@ -86,7 +86,20 @@ async function getAllBookings(req, res) {
   }
 }
 
+async function findPlaces(req, res) {
+  try {
+    const { searchTerm, lat, long } = req.query;
+    const places = await bookingService.findPlaces(searchTerm, lat, long);
+    res.json(places);
+  } catch (error) {
+    res
+      .status(500)
+      .json({ message: "Failed to fetch places", error: error.message });
+  }
+}
+
 module.exports = {
   createBooking,
   getAllBookings,
+  findPlaces,
 };

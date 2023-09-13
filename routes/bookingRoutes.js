@@ -7,5 +7,6 @@ const router = express.Router();
 // Define the routes and associate them with the controller functions
 router.post("/request", bookingController.createBooking);
 router.get("/list", bookingController.getAllBookings);
+router.get("/places", bookingController.findPlaces);
 
 module.exports = router;
