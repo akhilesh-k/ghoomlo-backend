@@ -26,7 +26,6 @@ async function getCoordinatesForSuggestion(suggestion) {
     return null;
   }
 
-  console.log(`Getting coordinates for: ${suggestion}`);
   try {
     const url = `http://dev.virtualearth.net/REST/v1/Locations?q=${encodeURIComponent(
       suggestion
