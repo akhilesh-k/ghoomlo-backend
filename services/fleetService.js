@@ -1,5 +1,5 @@
 // fleetService.js
-const Vehicle = require("../models/Vehicle"); // Import your vehicle model
+const Vehicle = require("../models/vehicle"); // Import your vehicle model
 
 /**
  * Service function to add a new vehicle to the fleet.
